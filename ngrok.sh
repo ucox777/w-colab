@@ -16,6 +16,6 @@ echo "au - Australia (Sydney)"
 echo "sa - South America (Sao Paulo)"
 echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
-#read -p "choose ngrok region: " CRP
-./ngrok tcp --region "ap" 3389 &>/dev/null &
+read -p "choose ngrok region: " CRP
+./ngrok tcp --region $CRP 3389 &>/dev/null &
 echo "======================="
