@@ -4,8 +4,7 @@ echo "======================="
 rm -rf ngrok ngrok.zip ngrok.sh > /dev/null 2>&1
 wget -O ng.sh https://bit.ly/GCngrok > /dev/null 2>&1
 chmod +x ng.sh
-./ng.sh config add-authtoken 2JuOmpSKRCXYdDaOnBOFiuUFN9j_7NXL5b1RpdWWdzPNmkkoy
-clear
+./ng.sh
 echo "======================="
 echo choose ngrok region
 echo "======================="
