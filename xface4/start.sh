@@ -1,5 +1,5 @@
 echo "Download ngrok"
-wget -O ngrok.sh https://raw.githubusercontent.com/ucox777/w-colab/main/ngrokcolab.sh
+wget -q -O ngrok.sh https://raw.githubusercontent.com/ucox777/w-colab/main/ngrokcolab.sh
 chmod +x ngrok.sh
 ./ngrok.sh $1 $2
 echo "===================================="
@@ -20,12 +20,12 @@ sudo apt-get upgrade -y > /dev/null 2>&1
 echo "===================================="
 echo "Start RDP"
 echo "===================================="
-wget https://raw.githubusercontent.com/ucox777/w-colab/main/xface4/run.sh > /dev/null 2>&1
-sleep 3
+wget -q https://raw.githubusercontent.com/ucox777/w-colab/main/xface4/run.sh
+
 sudo chmod +x run.sh
 tmux new-session -d -s "rdp" ./run.sh
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'                                         echo "===================================="
 #echo "Don't close this tab RDP runs 12 hours"
 #echo "===================================="
-sleep 41234
+
