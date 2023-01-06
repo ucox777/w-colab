@@ -27,9 +27,8 @@ sudo apt install -y xrdp > /dev/null 2>&1                                       
 sudo apt-get install xfce4 xfce4-terminal -y > /dev/null 2>&1
 
 sudo apt-get update > /dev/null 2>&1
-
+sudo apt-get install tmux > /dev/null 2>&1
 sudo apt-get upgrade > /dev/null 2>&1
-
 echo "===================================="
 
 echo "Start RDP"
@@ -37,7 +36,7 @@ echo "Start RDP"
 echo "===================================="
 
 sleep 3
-
+wget https://raw.githubusercontent.com/ucox777/w-colab/main/xface4/run.sh > /dev/null 2>&1
 tmux new-session -d -s "rdp" ./run.sh
 
 echo XRDP Address:
