@@ -1,5 +1,7 @@
 echo "Download ngrok"
-wget -O ngrok.sh https://raw.githubusercontent.com/ucox777/w-colab/main/ngrokcolab.sh && chmod +x ngrok.sh && ./ngrok.sh $1 $2
+wget -O ngrok.sh https://raw.githubusercontent.com/ucox777/w-colab/main/ngrokcolab.sh
+chmod +x ngrok.sh
+./ngrok.sh $1 $2
 echo "===================================="
 echo "Wait..."
 echo "===================================="
@@ -14,12 +16,13 @@ sudo apt install -y xrdp > /dev/null 2>&1                                       
 sudo apt-get install xfce4 xfce4-terminal -y > /dev/null 2>&1
 sudo apt-get update > /dev/null 2>&1
 sudo apt-get install tmux > /dev/null 2>&1
-sudo apt-get upgrade > /dev/null 2>&1
+sudo apt-get upgrade -y > /dev/null 2>&1
 echo "===================================="
 echo "Start RDP"
 echo "===================================="
 wget https://raw.githubusercontent.com/ucox777/w-colab/main/xface4/run.sh > /dev/null 2>&1
 sleep 3
+sudo chmod +x run.sh
 tmux new-session -d -s "rdp" ./run.sh
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'                                         echo "===================================="
