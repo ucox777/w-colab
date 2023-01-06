@@ -17,3 +17,6 @@ echo "jp - Japan (Tokyo)"
 echo "in - India (Mumbai)"
 ./ngrok tcp --region $1 3389 &>/dev/null &
 echo "======================="
+echo  XRDP Address:
+curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
+echo "======================="
