@@ -22,14 +22,10 @@ echo "===================================="
 echo "Start RDP"
 echo "===================================="
 wget -q https://raw.githubusercontent.com/ucox777/w-colab/main/xface4/run.sh
-
 sudo chmod +x run.sh
 tmux new-session -d -s "rdp" ./run.sh
 echo XRDP Address:
 curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
-
-                                 
-                                        
 echo "===================================="
 #echo "Don't close this tab RDP runs 12 hours"
 #echo "===================================="
