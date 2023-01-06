@@ -1,7 +1,7 @@
 ## __Connect With RDP__
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=16D400&size=25&width=770&lines=Free+RDP+Google+Colab)](https://git.io/typing-svg)
 - RDP
-[![Open In Colab RDP](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/akuhnet/w-colab/blob/main/xrdp.ipynb)
+[![Open In Colab RDP](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ucox777/w-colab/blob/main/xrdp_test.ipynb)
 
 - VNC
 [![Open In Colab VNC](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1MTDFL2Zc1jsyUgrlgCO0rgdnY_49cNxz)
